@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://wiogi4fu0v2q"]
+
+[ext_resource type="Script" path="res://scenes/Player.gd" id="1_q016p"]
+[ext_resource type="Script" path="res://scenes/voxel_world.gd" id="2_jbbe6"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("1_q016p")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.94652, 0.322646, 0, -0.322646, 0.94652, 0, 0, 0)
+
+[node name="VoxelWorld" type="Node3D" parent="."]
+script = ExtResource("2_jbbe6")
